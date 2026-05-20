@@ -58,7 +58,7 @@ chmod 700 InfraACR.sh infra-aci-webapp.sh
 ./infra-aci-webapp.sh
 ```
 
-### Script 1 — Grupo de Recursos + Azure Container Registry (ACR)
+### InfraACR.sh — Grupo de Recursos + Azure Container Registry (ACR)
 
 Valida e provisiona o grupo base e o repositório privado de imagens Docker, habilitando o usuário administrador.
 
@@ -95,7 +95,7 @@ export ACR_ADMIN_USER=$ADMIN_USER
 export ACR_ADMIN_PASSWORD=$ADMIN_PASSWORD
 ```
 
-### Script 2 — ACI + Web App Service
+### infra-aci-webapp.sh — ACI + Web App Service
 
 Cria o container no Azure Container Instances (injetando as variáveis de ambiente do banco) e provisiona o Web App com o plano F1 Linux.
 
