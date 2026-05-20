@@ -43,7 +43,7 @@ cp3-docker-ci-cd/
 | SQL Server | `sql-server-dimdim-rm559366-brazilsouth` | Brazil South |
 | Banco de Dados | `db-dimdim` | — |
 | Container Instance | `pythonmssqlrm559366` | Brazil South |
-| App Service Plan | `planACRWebApp` (SKU F1 Linux) | Brazil South |
+| App Service Plan | `planACRWebApp` | Brazil South |
 | Web App | `acrwebapprm559366` | Brazil South |
 
 ---
@@ -53,9 +53,9 @@ cp3-docker-ci-cd/
 Toda a infraestrutura foi criada via dois scripts shell. Para executá-los, conceda permissão e rode:
 
 ```bash
-chmod 700 script_1_acr.sh script_2_aci_webapp.sh
-./script_1_acr.sh
-./script_2_aci_webapp.sh
+chmod 700 InfraACR.sh infra-aci-webapp.sh
+./InfraACR.sh
+./infra-aci-webapp.sh
 ```
 
 ### Script 1 — Grupo de Recursos + Azure Container Registry (ACR)
