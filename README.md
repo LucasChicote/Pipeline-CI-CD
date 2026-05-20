@@ -296,9 +296,9 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 
 ## Vídeo de Evidências
 
-O vídeo demonstra o funcionamento fim a fim — execução do projeto e das pipelines — sem cortes, conforme exigido pelo checkpoint.
+O vídeo demonstra o funcionamento da **Execução/Deploy das Pipelines-CI-CD**
 
-> **[Assista ao vídeo de evidências do Projeto DimDim](#)**
+ [![Vídeo de Demonstração](https://img.youtube.com/vi/6i6u120rYy8/hqdefault.jpg)](https://youtu.be/6i6u120rYy8?si=QZxlVS69bQhTYUZ6)
 
 O vídeo cobre:
 - Execução do projeto de ponta a ponta
