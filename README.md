@@ -20,8 +20,9 @@ cp3-docker-ci-cd/
 │   ├── models.py               # Models SQLAlchemy (Jogador, Partida)
 │   └── requirements.txt        # Dependências Python
 ├── infra/
-│   ├── script_1_acr.sh         # Script: Grupo de Recursos + ACR
-│   └── script_2_aci_webapp.sh  # Script: ACI + Web App Service
+│   ├── InfraACR.sh         # Script: Grupo de Recursos + ACR
+                                                            ├── Os dois arquivos sh, fazer os comandos no cloud shell no portal do azure
+│   └── infra-aci-webapp.sh  # Script: ACI + Web App Service 
 ├── sql/
 │   └── script.sql              # DDL das tabelas no Azure SQL Server
 ├── postman/
