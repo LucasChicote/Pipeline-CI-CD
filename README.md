@@ -7,7 +7,7 @@
 
 ## Integrante
 
- Lucas Gomes de Araujo Lopes | RM 559607
+ Lucas Aurelio de Brito Chicote | RM 559366
 
 ---
 
@@ -200,8 +200,6 @@ O ciclo de vida completo foi gerenciado dentro do ecossistema do Azure DevOps:
 }
 ```
 
-> **Resposta esperada:** `201 Created` com o objeto do jogador criado, incluindo o `id` gerado.
-
 ---
 
 #### Listar todos os jogadores (Read — lista completa)
@@ -209,9 +207,7 @@ O ciclo de vida completo foi gerenciado dentro do ecossistema do Azure DevOps:
 - **Método:** `GET`
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/jogadores`
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** Array JSON com todos os jogadores cadastrados no banco (ex: Lucas, Gabriel…).
-
+  
 ---
 
 #### Buscar um jogador específico (Read — detalhe)
@@ -220,9 +216,7 @@ O ciclo de vida completo foi gerenciado dentro do ecossistema do Azure DevOps:
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/jogadores/4`
   *(substitua `4` pelo ID do jogador desejado)*
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** JSON apenas com os dados do jogador solicitado.
-
+  
 ---
 
 #### Atualizar o nome de um jogador (Update)
@@ -237,8 +231,6 @@ O ciclo de vida completo foi gerenciado dentro do ecossistema do Azure DevOps:
 }
 ```
 
-> **Resposta esperada:** `200 OK` com o jogador atualizado.
-
 ---
 
 #### Deletar um jogador (Delete)
@@ -246,10 +238,7 @@ O ciclo de vida completo foi gerenciado dentro do ecossistema do Azure DevOps:
 - **Método:** `DELETE`
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/jogadores/4`
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** Mensagem confirmando a exclusão.
-> Devido ao `cascade="all, delete-orphan"` no model, deletar um jogador **remove automaticamente todas as partidas associadas a ele**.
-
+  
 ---
 
 ### CRUD de Partidas (Jokenpo)
@@ -269,8 +258,6 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 }
 ```
 
-> **Resposta esperada:** O servidor computa a lógica do Jokenpo (Pedra, Papel ou Tesoura), registra a partida no banco vinculando o ID do jogador, e retorna o placar atualizado de vitórias, derrotas e empates.
-
 ---
 
 #### Listar todas as partidas (Read)
@@ -279,8 +266,6 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/partidas`
 - **Body:** nenhum (`none`)
 
-> **Resposta esperada:** Array com o histórico completo de todas as partidas registradas.
-
 ---
 
 #### Filtrar partidas de um jogador específico (Read — filtrado)
@@ -288,9 +273,7 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 - **Método:** `GET`
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/partidas?jogador_id=4`
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** Apenas as partidas do jogador com o ID informado.
-
+  
 ---
 
 #### Deletar uma partida específica (Delete)
@@ -299,9 +282,7 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/partidas/18`
   *(substitua `18` pelo ID da partida desejada)*
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** Mensagem confirmando a exclusão da partida.
-
+  
 ---
 
 #### Resetar o placar de um jogador (Delete em cascata)
@@ -309,9 +290,7 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 - **Método:** `POST`
 - **URL:** `http://pythonmssqlrm559366.brazilsouth.azurecontainer.io/jogadores/4/reset`
 - **Body:** nenhum (`none`)
-
-> **Resposta esperada:** Todas as partidas do jogador `4` são removidas, zerando o placar dele.
-
+  
 ---
 
 ## Vídeo de Evidências
@@ -319,7 +298,6 @@ Com o `id` do jogador em mãos (ex: `1`), abra uma nova aba no Postman:
 O vídeo demonstra o funcionamento fim a fim — execução do projeto e das pipelines — sem cortes, conforme exigido pelo checkpoint.
 
 > **[Assista ao vídeo de evidências do Projeto DimDim](#)**
-> *(substitua o `#` pelo link do vídeo)*
 
 O vídeo cobre:
 - Execução do projeto de ponta a ponta
