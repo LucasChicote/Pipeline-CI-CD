@@ -25,6 +25,10 @@ cp3-docker-ci-cd/
 ├── azure-pipelines.yml         # Pipeline CI (YAML)
 └── README.md
 ```
+## Arquitetura da Solução
+
+<img src="Arquitetura da Solução Pipeline-CI-CD.png" width="100%" alt="Diagrama de Arquitetura Macro - DimDim BackEnd" />
+
 ---
 ## Infraestrutura Provisionada
 | Recurso | Nome | Região |
