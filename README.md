@@ -2,8 +2,14 @@
 > **3º Checkpoint — 2º Semestre**
 > API Flask (Jokenpo) integrada ao Azure SQL Server, com esteira CI/CD automatizada via Azure DevOps e deploy em nuvem via Azure Container Instances e Web App Services.
 ---
-## Integrante
- Lucas Aurelio de Brito Chicote | RM 559366
+## Integrante:
+ Lucas Aurelio de Brito Chicote -> RM 559366
+---
+---
+## Link do Projeto DimDim Cp3:
+```
+https://dev.azure.com/GroupFoodly/DimDim%20CP3
+```
 ---
 ## Estrutura do Repositório
 ```
