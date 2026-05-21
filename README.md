@@ -116,6 +116,34 @@ az sql server firewall-rule create \
   --end-ip-address 255.255.255.255
 ```
 
+### Scripts com DDL das tabelas criadas para o crud
+```bash
+CREATE TABLE jogadores (
+    id        INT           NOT NULL IDENTITY(1,1),
+    nome      NVARCHAR(100) NOT NULL,
+    criado_em DATETIME      NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT pk_jogadores PRIMARY KEY (id)
+);
+
+CREATE TABLE partidas (
+    id                  INT          NOT NULL IDENTITY(1,1),
+    jogador_id          INT          NOT NULL,
+    escolha_jogador     NVARCHAR(10) NOT NULL,
+    escolha_computador  NVARCHAR(10) NOT NULL,
+    resultado           NVARCHAR(15) NOT NULL,
+    jogada_em           DATETIME     NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT pk_partidas         PRIMARY KEY (id),
+    CONSTRAINT fk_partidas_jogador FOREIGN KEY (jogador_id)
+        REFERENCES jogadores (id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+CREATE INDEX idx_partidas_jogador ON partidas (jogador_id);
+```
+
 ### infra-aci-webapp.sh — ACI + Web App Service
 Cria o container no Azure Container Instances (injetando as variáveis de ambiente do banco) e provisiona o Web App com o plano F1 Linux.
 ```bash
