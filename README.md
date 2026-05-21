@@ -36,7 +36,7 @@ cp3-docker-ci-cd/
 | Resource Group | `cp3-docker-ci-cd` | Brazil South |
 | Container Registry | `pythonmssqlrm559366` | Brazil South |
 | SQL Server | `sql-server-dimdim-rm559366-brazilsouth` | Brazil South |
-| Banco de Dados | `db-dimdim` | — |
+| Banco de Dados | `db-dimdim` | (none) |
 | Container Instance | `pythonmssqlrm559366` | Brazil South |
 | App Service Plan | `planACRWebApp` | Brazil South |
 | Web App | `acrwebapprm559366` | Brazil South |
